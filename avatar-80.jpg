@@ -1,7 +1,0 @@
-const fs = require('fs');
-
-const files = fs.readdirSync('/home/gildas/Téléchargements/people');
-
-files.forEach((file, index) => {
-    fs.renameSync(file, `avatar-${index}.jpg`);
-});
